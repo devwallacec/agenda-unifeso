@@ -16,7 +16,7 @@ interface MenuLinkProps {
   display?: boolean;
 }
 
-export const MenuLink = ({ url, icon, text, display = true }: MenuLinkProps) => {
+export const MobileMenuLink = ({ url, icon, text, display = true }: MenuLinkProps) => {
   return (
     <Link to={url} className={clsx({ hidden: !display }, "flex gap-2 items-center border-b border-neutral-300 p-4 text-black hover:bg-neutral-300 transition-colors")}>
       {icon}
@@ -39,19 +39,19 @@ export const MobileNav = ({ display = false }: IMobileNavProps) => {
       <div className="bg-white w-6 h-6 rotate-45 absolute right-2 -top-2 md:hidden"></div>
       <ul className="bg-white  flex flex-col md:hidden  rounded-lg overflow-hidden">
         <li className="z-10 bg-white">
-          <MenuLink url="/" icon={<FaHome size={20} />} text="HOME" display={!loggedIn}/>
+          <MobileMenuLink url="/" icon={<FaHome size={20} />} text="HOME" display={!loggedIn}/>
         </li>
         <li className="z-10 bg-white">
-          <MenuLink url="/bookings" icon={<FaCalendarAlt size={17} />} text="AGENDAMENTOS" display={loggedIn} />
+          <MobileMenuLink url="/bookings" icon={<FaCalendarAlt size={17} />} text="AGENDAMENTOS" display={loggedIn} />
         </li>
         <li className="z-10 bg-white">
-          <MenuLink url="/list" icon={<FaCalendarAlt size={17} />} text="LISTAR AGENDAMENTOS" display={loggedIn} />
+          <MobileMenuLink url="/list" icon={<FaCalendarAlt size={17} />} text="LISTAR AGENDAMENTOS" display={loggedIn} />
         </li>
         <li>
-          <MenuLink url="/signup" icon={<FaUsers size={20} />} text="CADASTRO" display={!loggedIn} />
+          <MobileMenuLink url="/signup" icon={<FaUsers size={20} />} text="CADASTRO" display={!loggedIn} />
         </li>
         <li onClick={() => handleLogout()}>
-          <MenuLink url="#" icon={<IoMdExit size={20} />} text={`${userName} (SAIR)`} display={loggedIn} />
+          <MobileMenuLink url="#" icon={<IoMdExit size={20} />} text={`${userName} (SAIR)`} display={loggedIn} />
         </li>
       </ul>
     </div>
