@@ -12,13 +12,14 @@
 
 #### Tecnologias Utilizadas
 Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
-- **JavaScript**
-- **NodeJS**
-- **ReactJS**
-- **Tailwind CSS**
-- **React Icons**
-- **Vercel**
-- **GitHub**
+- **JavaScript - Linguagem de programação usada para fazer páginas interativas da Internet.**
+- **NodeJS - Tecnologia usada para executar código JavaScript em ambiente de servidor.**
+- **ReactJS - Framework JavaScript para desenvolvimento front-end.**
+- **Tailwind CSS - Framework CSS que permite criar estilos personalizados.**
+- **React Icons - Biblioteca de icones para o React.**
+- **React Rolter DOM - Biblioteca para gerir rotas em aplicações React.**
+- **Vercel - Plataforma de hospedagem de sites.**
+- **GitHub - Plataforma de desensolvimento colaborativo.**
 
 #### Instruções para Executar/Abrir o MVP
 1. Na página inicial, o usuário pode **cadastrar-se** ou **fazer login**, caso já tenha uma conta.
