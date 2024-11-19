@@ -25,7 +25,7 @@ function AppContent() {
           <Route path="/feedback" element={<FeedbackPage />} />
         </Routes>
         <InfoButton
-          text="Todas as operações realizadas neste site (login, cadastro e agendamento) são simuladas afim de representarem um fluxo real de utilização porém sem persistência de dados!"
+          text="Todas as operações realizadas neste site (login, cadastro, agendamento e feedback) são simuladas afim de representarem um fluxo real de utilização porém sem persistência de dados e validade de dados!"
           className="absolute bottom-2 left-2"
           size={32}
           title="Aviso"

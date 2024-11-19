@@ -50,7 +50,7 @@ export const MobileNav = ({ display = false }: IMobileNavProps) => {
         <li>
           <MobileMenuLink url="/signup" icon={<FaUsers size={20} />} text="CADASTRO" display={!loggedIn} />
         </li>
-        <li onClick={() => handleLogout()}>
+        <li>
           <MobileMenuLink url="/feedback" icon={<FaStar size={20} />} text="AVALIAÇÃO E FEEDBACK" display={loggedIn} />
         </li>
         <li onClick={() => handleLogout()}>
