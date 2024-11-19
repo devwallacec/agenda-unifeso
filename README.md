@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Agenda Fácil NAF
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Integrantes
+- **Leandro Soares de Souza Barbosa**
+- **Rafaella Pringi de Oliveira Andrade**
+- **Thaylan Cezar de Lima da Silva**
+- **Wallace da Silva Correa**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Situação Problema: *AgendaFácil NAF*
 
-## Expanding the ESLint configuration
+#### Tecnologias Utilizadas
+Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
+- **JavaScript**
+- **NodeJS**
+- **ReactJS**
+- **Tailwind CSS**
+- **React Icons**
+- **Vercel**
+- **GitHub**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Instruções para Executar/Abrir o MVP
+1. Na página inicial, o usuário pode **cadastrar-se** ou **fazer login**, caso já tenha uma conta.
+2. Após essa etapa, o usuário é redirecionado para a **página de agendamento**.
+3. O usuário seleciona o **local, data e horário** para o agendamento e clica em **Enviar**.
+4. Ao enviar as informações, uma **confirmação** é exibida e um **e-mail de confirmação** é enviado automaticamente.
+5. Após concluir o agendamento, o usuário pode **avaliar os serviços da NAF** e/ou **fechar a página**.
 
-- Configure the top-level `parserOptions` property like this:
+#### Informações Adicionais
+*(Adicione aqui qualquer informação extra que possa ajudar no entendimento do projeto)*
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### MVP Definido: **Protótipo do MVP**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Objetivos e Benefícios do Produto
+O projeto tem como objetivo facilitar o agendamento de atendimentos no Núcleo de Apoio Contábil e Fiscal (**NAF**) do **Unifeso**, oferecendo acesso rápido e autônomo aos serviços fiscais. A plataforma também promove um ambiente de aprendizado prático para estudantes, beneficiando a comunidade.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+#### Principais Benefícios
+- **Facilidade no Agendamento:** Agendamentos e acompanhamentos de atendimentos podem ser feitos online, oferecendo mais agilidade e conveniência.
+- **Otimização do Atendimento:** A plataforma auxilia o NAF na organização dos horários, aumentando a capacidade de atendimento.
+- **Lembretes Automáticos:** Envio de lembretes por e-mail para que os usuários não percam seus horários.
+- **Segurança de Dados:** Proteção das informações dos usuários, garantindo privacidade e segurança.
+- **Aprimoramento Contínuo:** Coleta de feedback dos usuários para melhoria contínua dos serviços.
+
+---
+
+### Público-Alvo da Solução
+A plataforma é direcionada para:
+- **População Local:** Pessoas que buscam suporte em questões fiscais e contábeis, especialmente durante a época de declaração do Imposto de Renda.
+- **Estudantes e Professores do Unifeso:** Membros do NAF que buscam organizar e aplicar de forma prática os conhecimentos adquiridos em sala de aula.
+
+---
+
+### Dores do Público-Alvo
+- **Dificuldade de Acesso a Orientações Fiscais:** Falta de recursos e conhecimento em questões fiscais, especialmente durante o período de declaração do Imposto de Renda.
+- **Desafios no Agendamento:** A ausência de uma plataforma prática pode tornar o agendamento confuso e inconveniente.
+- **Necessidade de Organização para o NAF:** Professores e alunos precisam de um sistema eficiente para gerenciar os atendimentos, garantindo qualidade e consistência no serviço.
+
+---
