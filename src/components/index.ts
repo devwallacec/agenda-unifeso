@@ -9,3 +9,4 @@ export * from './InputField';
 export * from './Button';
 export * from './InfoButton';
 export * from './BookingList';
+export * from './FeedbackForm';

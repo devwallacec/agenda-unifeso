@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { FaCalendarAlt, FaHome, FaUsers } from "react-icons/fa";
+import { FaCalendarAlt, FaHome, FaStar, FaUsers } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../../contexts/AuthContext";
 import { useContext } from "react";
@@ -49,6 +49,9 @@ export const MobileNav = ({ display = false }: IMobileNavProps) => {
         </li>
         <li>
           <MobileMenuLink url="/signup" icon={<FaUsers size={20} />} text="CADASTRO" display={!loggedIn} />
+        </li>
+        <li onClick={() => handleLogout()}>
+          <MobileMenuLink url="/feedback" icon={<FaStar size={20} />} text="AVALIAÇÃO E FEEDBACK" display={loggedIn} />
         </li>
         <li onClick={() => handleLogout()}>
           <MobileMenuLink url="#" icon={<IoMdExit size={20} />} text={`${userName} (SAIR)`} display={loggedIn} />

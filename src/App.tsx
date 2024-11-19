@@ -6,6 +6,7 @@ import { SignupPage } from "./pages/signup/index.tsx";
 import { ListingPage } from "./pages/listing/index.tsx";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import clsx from "clsx";
+import { FeedbackPage } from "./pages/feedback/index.tsx";
 
 function AppContent() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function AppContent() {
           <Route path="/bookings" element={<BookingPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/list" element={<ListingPage />} />
+          <Route path="/feedback" element={<FeedbackPage />} />
         </Routes>
         <InfoButton
           text="Todas as operações realizadas neste site (login, cadastro e agendamento) são simuladas afim de representarem um fluxo real de utilização porém sem persistência de dados!"

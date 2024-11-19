@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useContext } from "react";
-import { FaCalendarAlt, FaHome, FaUsers } from "react-icons/fa";
+import { FaCalendarAlt, FaHome, FaStar, FaUsers } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Context } from "../../contexts/AuthContext";
 
@@ -38,6 +38,7 @@ export const Navigation = () => {
       <MenuLink url="/bookings" icon={<FaCalendarAlt size={17} />} text="AGENDAR" display={loggedIn} />
       <MenuLink url="/list" icon={<FaCalendarAlt size={17} />} text="LISTAR AGENDAMENTOS" display={loggedIn} />
       <MenuLink url="/signup" icon={<FaUsers size={20} />} text="cadastrar" display={!loggedIn} />
+      <MenuLink url="/feedback" icon={<FaStar size={20} />} text="Avaliação e Feedback" display={loggedIn} />
       <div className={clsx({ hidden: !loggedIn })}>
         {userName ?? userName}
         <span className="ml-3">

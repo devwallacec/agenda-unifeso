@@ -42,7 +42,7 @@ export const BookingForm = () => {
     
     setFormData({ cidade: "", data: "", horario: "" })
     // Popup de sucesso
-    alert("Agendamento realizado com sucesso!");
+    alert("Agendamento realizado com sucesso! Foi enviado um email de confirmação para você.");
   };
 
   return (
