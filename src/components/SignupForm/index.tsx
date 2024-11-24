@@ -42,7 +42,7 @@ export const SignupForm = () => {
     setUserName(formData.username);
     setPassword(formData.password);
     alert("Cadastro realizado com sucesso!");
-    navigate("/");
+    navigate("/signin");
   };
 
   return (
