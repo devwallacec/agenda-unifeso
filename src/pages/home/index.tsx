@@ -8,7 +8,7 @@ export const HomePage = () => {
     <div className="flex w-full h-full items-center justify-center p-8">
       <div className="h-full w-1/4 hidden md:block mr-20"></div>
       <div className="flex w-full justify-center px-4 py-8 gap-x-7 flex-wrap">
-        <img src="public\images\details.png" alt="" className="w-64 mb-12" />
+        <img src="/images/details.png" alt="" className="w-64 mb-12" />
         <div className="flex flex-col">
           <h1 className="font-sans text-3xl uppercase mb-4 font-bold">Olá, seja bem vindo!</h1>
           <p className="">Bem vindo ao Agenda Fácil da Rede NAF.</p>

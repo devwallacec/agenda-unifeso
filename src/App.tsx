@@ -37,7 +37,7 @@ function AppContent() {
         />
       </section>
       <img
-        src="public\images\details.png"
+        src="/images/details.png"
         alt=""
         className={clsx(
           { "hidden md:hidden": location.pathname === "/list" || location.pathname === "/" },
