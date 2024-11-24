@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
-import { BookingList } from "../../components";
 import { useNavigate } from "react-router-dom";
 import { Context } from "../../contexts/AuthContext";
+import { BookingList } from "../../components/";
 
 export const ListingPage = () => {
   const { loggedIn } = useContext(Context);
@@ -18,6 +18,8 @@ export const ListingPage = () => {
     return null; // Evita exibir o conteúdo antes do redirecionamento
   }
 
+
+  // Construção da página de listagem de agendamentos.
   return (
     <div className="flex w-full items-center justify-center p-8">
       <div className="h-full w-1/4 hidden md:block"></div>

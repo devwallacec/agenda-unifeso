@@ -1,9 +1,11 @@
 import { useContext, useState } from "react";
 import { Context } from "../../contexts/ListingContext";
 
+// Componente de formulário de agendamento
 export const BookingForm = () => {
   const { addListing } = useContext(Context);
 
+  // Declaração do estado do formulário e das funções de manipulação
   const [formData, setFormData] = useState({
     cidade: "",
     data: "",
@@ -45,6 +47,8 @@ export const BookingForm = () => {
     alert("Agendamento realizado com sucesso! Foi enviado um email de confirmação para você.");
   };
 
+
+  // Estruturação visual do formulário
   return (
     <div className="bg-primary text-white flex flex-col w-full md:w-2/5 rounded-3xl items-center justify-center px-4 py-8">
       <h1 className="font-sans text-3xl uppercase">Agendamento</h1>

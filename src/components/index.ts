@@ -1,3 +1,6 @@
+// Declaração de exportação de todos os componentes
+// Ao criar um novo componente, adicione a exportação aqui.
+
 export * from './Header';
 export * from './LoginForm';
 export * from './Sidebar';

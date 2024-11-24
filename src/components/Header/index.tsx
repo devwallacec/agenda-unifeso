@@ -4,8 +4,10 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
 export const Header = () => {
+  // Declaração de estado para controlar a exibição do menu mobile
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  // Renderização do componente
   return (
     <header className="flex w-full py-8 px-8 items-center justify-between bg-primary text-white">
       <div className="flex flex-1 md:flex-[1]">
@@ -13,7 +15,7 @@ export const Header = () => {
       </div>
 
       {
-        // TODO: É necessário melhorar a responsividade dessa parte
+        // TODO: melhorar a responsividade dessa parte
       }
       <div className="text-center hidden xs:flex flex-1 md:flex-[3] flex-col">
         <p className="text-lg font-secondary font-bold whitespace-nowrap">AGENDA FÁCIL - NAF</p>

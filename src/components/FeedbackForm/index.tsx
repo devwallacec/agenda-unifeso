@@ -3,10 +3,12 @@ import { FaStar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export const FeedbackForm = () => {
+  // Estados para controle das estrelas
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const navigate = useNavigate();
 
+  // Função para enviar o feedback
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -19,6 +21,7 @@ export const FeedbackForm = () => {
     navigate("/list");
   };
 
+  // Componente do formulário de feedback
   return (
     <div className="bg-primary text-white flex flex-col w-full md:w-2/5 rounded-3xl items-center justify-center px-4 py-8">
       <h1 className="font-sans text-3xl uppercase">Feedback</h1>

@@ -20,13 +20,15 @@ export const BookingList = () => {
     return dateA.getTime() - dateB.getTime(); // Ordem ascendente (mais antigos primeiro)
   });
 
+  // Componente que renderiza a lista de agendamentos
   return (
     <table className="table-auto w-full md:w-8/12">
       <thead className="text-left">
         <tr>
           <th className="">Cidade</th>
-          <th className="">Data</th>
-          <th className="">Horário</th>
+          <th className="whitespace-nowrap text-center">Data</th>
+          <th className="whitespace-nowrap text-center">Horário</th>
+          <th className="whitespace-nowrap text-center">Cancelar?</th>
         </tr>
       </thead>
       <tbody className="text-left">

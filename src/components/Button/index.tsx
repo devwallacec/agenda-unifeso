@@ -5,6 +5,7 @@ interface IButtonProps {
   className: string;
 }
 
+// Componente base para botões
 export const Button = ({className,label,onClick,type}: IButtonProps) => {
   return (
     <button

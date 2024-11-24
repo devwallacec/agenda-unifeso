@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React, { useState } from "react";
 import { FaCircleInfo } from "react-icons/fa6";
 
+// Declaração de interface para tipagem das propriedades
 interface IInfoButtonProps {
   className?: string;
   size?: number;
@@ -10,6 +11,8 @@ interface IInfoButtonProps {
   icon?: React.ReactNode;
 }
 
+
+// Renderização do componente base do botão de informação
 export const InfoButton = ({ className, size, text, title, icon }: IInfoButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
 

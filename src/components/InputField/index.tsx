@@ -1,3 +1,4 @@
+// Declaração de interface para tipar as propriedades do componente
 interface IInputFieldProps {
   label: string;
   type: string;
@@ -7,6 +8,7 @@ interface IInputFieldProps {
   placeholder: string;
 }
 
+// Componente base para campos do  tipo input para formulário
 export const InputField = ({label,name,onChange,placeholder,type,value}: IInputFieldProps) => {
   return (
     <div className="flex flex-col">

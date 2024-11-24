@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Context } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
+
+// Montagem e controle do componente de formulário de login
 export const LoginForm = () => {
   const [input1, setInput1] = useState('');
   const [input2, setInput2] = useState('');
