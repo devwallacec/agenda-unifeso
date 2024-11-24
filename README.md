@@ -29,7 +29,29 @@ Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
 5. Após concluir o agendamento, o usuário pode **avaliar os serviços da NAF** e/ou **fechar a página**.
 
 #### Informações Adicionais
-*(Adicione aqui qualquer informação extra que possa ajudar no entendimento do projeto)*
+# REQUISITOS DO PROJETO
+
+## Funcionais
+
+| **Prioridade** | **Descrição**                                                                                  |
+|----------------|-----------------------------------------------------------------------------------------------|
+| 1              | Os estudantes, professores e população local devem cadastrar seus respectivos perfis no aplicativo, com informações como nome de usuário, email e senha. |
+| 2              | Usuários devem conseguir procurar por serviços específicos oferecidos pelo NAF dentro da plataforma. |
+| 3              | Os usuários devem ser capazes de visualizar os horários disponíveis e agendar atendimentos de forma online. |
+| 4              | Os administradores do NAF devem poder configurar e gerenciar a disponibilidade de horários e atendimentos. |
+| 5              | O sistema deve enviar e-mails automáticos de confirmação e lembrete de agendamentos para os usuários. |
+| 6              | Os usuários devem ter a opção de fornecer feedback e avaliar os atendimentos recebidos.         |
+
+## Não Funcionais
+
+| **Prioridade** | **Descrição**                                                                                  |
+|----------------|-----------------------------------------------------------------------------------------------|
+| 1              | A plataforma deve proporcionar uma experiência de uso intuitiva, com instruções claras e suporte disponível para resolver dúvidas dos usuários. |
+| 2              | A solução deve ser compatível com diferentes dispositivos e navegadores, permitindo o acesso tanto em computadores quanto em dispositivos móveis. |
+| 3              | O sistema deve ser capaz de suportar um aumento no número de usuários e agendamentos sem comprometer o desempenho. |
+| 4              | O sistema deve garantir a segurança e privacidade dos dados pessoais dos usuários, em conformidade com as normas de proteção de dados. |
+| 5              | O sistema deve funcionar 24 horas por dia, 7 dias por semana.                                  |
+| 6              | O sistema deve permitir atualizações e manutenção com o mínimo de interrupção para os usuários, idealmente em horários de baixa demanda. |
 
 ---
 
