@@ -44,7 +44,7 @@ export const MobileNav = ({ display = false }: IMobileNavProps) => {
       <div className="bg-white w-6 h-6 rotate-45 absolute right-2 -top-2 md:hidden"></div>
       <ul className="bg-white  flex flex-col md:hidden  rounded-lg overflow-hidden">
         <li className="z-10 bg-white">
-          <MobileMenuLink url="/" icon={<FaHome size={20} />} text="HOME" />
+          <MobileMenuLink url="/" icon={<FaHome size={20} />} text="HOME" display={!loggedIn} />
         </li>
         <li className="z-10 bg-white">
           <MobileMenuLink url="/signin" icon={<FaUser size={20} />} text="ENTRAR" display={!loggedIn}/>

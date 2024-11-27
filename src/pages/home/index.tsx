@@ -1,8 +1,18 @@
+import { useContext, useEffect } from "react";
+import { Button } from "../../components";
+import { Context } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
+  const {loggedIn} = useContext(Context);
   const navigate = useNavigate();
-  
+
+  useEffect(() => {
+    if (loggedIn) {
+      navigate("/bookings");
+    }
+  });
+
   // O componente HomePage é responsável por exibir a página inicial do site
   return (
     <div className="flex w-full h-full items-center justify-center p-8">
@@ -15,24 +25,12 @@ export const HomePage = () => {
           <p className="mb-12">Um portal desenvolvido para facilitar a sua vida na hora de realizar os agendamentos.</p>
           <p className="mb-2 font-secondary">Clique em uma das opções abaixo para comerçar:</p>
           <div className="flex w-full gap-x-2">
-            <button
-              type="button"
-              onClick={() => {
-                navigate("/signup");
-              }}
-              className="bg-sky-500 hover:bg-sky-600 hover:transition-all whitespace-nowrap text-white px-2 py-4 rounded-md w-1/2 self-end"
-            >
+            <Button type="link" to="/signup" style="alternate">
               Cadastrar-se
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                navigate("/signin");
-              }}
-              className="bg-blue-600 hover:bg-blue-500 hover:transition-all text-white px-2 py-4 rounded-md w-1/2 self-end"
-            >
+            </Button>
+            <Button type="link" to="/signin">
               Entrar
-            </button>
+            </Button>
           </div>
         </div>
       </div>

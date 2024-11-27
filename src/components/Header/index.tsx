@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <header className="flex w-full py-8 px-8 items-center justify-between bg-primary text-white">
       <div className="flex flex-1 md:flex-[1]">
-        <img src="/images/naf-logo.png" alt="" width={96} />
+        <img src="/images/unifesowhite.png" alt="" width={96} />
       </div>
 
       {

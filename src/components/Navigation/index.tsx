@@ -37,7 +37,7 @@ export const Navigation = () => {
   // renderiza o componente Navigation
   return (
     <div className="bg-white hidden md:flex min-h-16 justify-end items-center px-10 gap-x-10 drop-shadow-md">
-      <MenuLink url="/" icon={<FaHome size={20} />} text="Home" />
+      <MenuLink url="/" icon={<FaHome size={20} />} text="Home" display={!loggedIn}/>
       <MenuLink url="/signin" icon={<FaUser  size={20} />} text="Entrar" display={!loggedIn} />
       <MenuLink url="/bookings" icon={<FaCalendarAlt size={17} />} text="AGENDAR" display={loggedIn} />
       <MenuLink url="/list" icon={<FaCalendarAlt size={17} />} text="LISTAR AGENDAMENTOS" display={loggedIn} />

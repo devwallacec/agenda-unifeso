@@ -20,7 +20,7 @@ export const BookingPage = () => {
 
   // Conteúdo da página de agendamento.
   return (
-    <div className="flex w-full h-full items-center justify-center p-8">
+    <div className="flex w-full items-center justify-center p-8">
       <div className="h-full w-1/4 hidden md:block"></div>
       <BookingForm />
     </div>
