@@ -83,5 +83,5 @@ A plataforma é direcionada para:
 
 ---
 
-Link do site: https://agenda-unifeso.vercel.app
-Link do Figma: [Figma](https://www.figma.com/design/xNlsqXHenFXs7WXb4E4c9I/MVP---AGENDA-UNIFESO?node-id=74-74)
+- **Link do site: https://agenda-unifeso.vercel.app
+- **Link do Figma: [Protótipos](https://www.figma.com/design/xNlsqXHenFXs7WXb4E4c9I/MVP---AGENDA-UNIFESO?node-id=74-74)
