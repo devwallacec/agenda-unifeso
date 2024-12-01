@@ -17,7 +17,7 @@ Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
 - **ReactJS - Framework JavaScript para desenvolvimento front-end.**
 - **Tailwind CSS - Framework CSS que permite criar estilos personalizados.**
 - **React Icons - Biblioteca de icones para o React.**
-- **React Rolter DOM - Biblioteca para gerir rotas em aplicações React.**
+- **React Router DOM - Biblioteca para gerir rotas em aplicações React.**
 - **Vercel - Plataforma de hospedagem de sites.**
 - **GitHub - Plataforma de desensolvimento colaborativo.**
 
@@ -38,9 +38,8 @@ Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
 | 1              | Os estudantes, professores e população local devem cadastrar seus respectivos perfis no aplicativo, com informações como nome de usuário, email e senha. |
 | 2              | Usuários devem conseguir procurar por serviços específicos oferecidos pelo NAF dentro da plataforma. |
 | 3              | Os usuários devem ser capazes de visualizar os horários disponíveis e agendar atendimentos de forma online. |
-| 4              | Os administradores do NAF devem poder configurar e gerenciar a disponibilidade de horários e atendimentos. |
-| 5              | O sistema deve enviar e-mails automáticos de confirmação e lembrete de agendamentos para os usuários. |
-| 6              | Os usuários devem ter a opção de fornecer feedback e avaliar os atendimentos recebidos.         |
+| 4              | O sistema deve enviar e-mails automáticos de confirmação e lembrete de agendamentos para os usuários. |
+| 5              | Os usuários devem ter a opção de fornecer feedback e avaliar os atendimentos recebidos.         |
 
 ## Não Funcionais
 
@@ -83,5 +82,4 @@ A plataforma é direcionada para:
 
 ---
 
-- Link do site: [Site](https://agenda-unifeso.vercel.app)
-- Link do Figma: [Protótipos](https://www.figma.com/design/xNlsqXHenFXs7WXb4E4c9I/MVP---AGENDA-UNIFESO?node-id=74-74)
+https://agenda-unifeso.vercel.app

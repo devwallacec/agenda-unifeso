@@ -23,7 +23,7 @@ export const HomePage = () => {
           <h1 className="font-sans text-3xl uppercase mb-4 font-bold">Olá, seja bem vindo!</h1>
           <p className="">Bem vindo ao Agenda Fácil da Rede NAF.</p>
           <p className="mb-12">Um portal desenvolvido para facilitar a sua vida na hora de realizar os agendamentos.</p>
-          <p className="mb-2 font-secondary">Clique em uma das opções abaixo para comerçar:</p>
+          <p className="mb-2 font-secondary">Clique em uma das opções abaixo para começar:</p>
           <div className="flex w-full gap-x-2">
             <Button type="link" to="/signup" style="alternate">
               Cadastrar-se
