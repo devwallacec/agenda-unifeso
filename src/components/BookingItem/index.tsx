@@ -6,10 +6,20 @@ interface IBooking {
   city: string;
   date: string; // date deve estar no formato ISO (yyyy-mm-dd) recebido via formulário
   time: string;
+  type: number;
 }
 
-export const BookingItem = ({ city, date, time }: IBooking) => {
+export const BookingItem = ({ city, date, time, type }: IBooking) => {
   const {removeListing} = useContext(Context)
+  const bookingtype = [
+    "Consultar meu imposto de renda",
+    "Consultar minha restituição",
+    "Emitir DARF para pagar o imposto",
+    "Entregar documentos de malha fiscal",
+    "Retificar notificação de lançamento",
+    "Impugnar notificação de lançamento",
+    "Declarar imposto de renda",
+  ];
 
   // Função para formatar a data no formato dd/mm/aaaa
   const formatDate = (isoDate: string) => {
@@ -22,7 +32,7 @@ export const BookingItem = ({ city, date, time }: IBooking) => {
 
   // Função para remover um agendamento
   const handleRemove = (listing: IBooking) => {
-    const confirmation = confirm(`Tem certeza que deseja remover o agendamento ${city + " - " + time + " - " + date }?`);
+    const confirmation = confirm(`Tem certeza que deseja remover o agendamento: ${bookingtype[type] + " - " + city + " - " + time + " - " + date }?`);
     if (confirmation){
       removeListing(listing);
     }
@@ -30,13 +40,14 @@ export const BookingItem = ({ city, date, time }: IBooking) => {
 
   // Componente que renderiza um agendamento
   return (
-    <tr className="border-y hover:bg-neutral-200 cursor-pointer">
-      <td className="py-3 px-1 w-6/12 whitespace-nowrap">{city}</td>
-      <td className="py-3 px-1 w-2/12 whitespace-nowrap">{formatDate(date)}</td>
-      <td className="py-3 px-1 w-2/12 whitespace-nowrap">{time} h</td>
-      <td className="py-3 px-1 whitespace-nowrap w-full flex items-center justify-center" title="Cancelar esse agendamento?">
-        <FaRegTrashAlt size={20} color="#aa0000" onClick={() => handleRemove({city, date, time})} />
-      </td>
-    </tr>
+    <div className="flex flex-col md:flex-row items-center border-y hover:bg-neutral-200 cursor-pointer">
+      <span className="flex w-full md:w-4/12 py-3 truncate"><span className="font-bold mr-2 md:hidden">Tipo:</span>{bookingtype[type]}</span>
+      <span className="flex w-full md:w-2/12 py-3 truncate"><span className="font-bold mr-2 md:hidden">Local:</span>{city}</span>
+      <span className="flex w-full md:w-2/12 py-3"><span className="font-bold mr-2 md:hidden">Data:</span>{formatDate(date)}</span>
+      <span className="flex w-full md:w-2/12 py-3"><span className="font-bold mr-2 md:hidden">Horário:</span>{time} h</span>
+      <span className="flex w-full md:w-2/12 py-3 justify-end md:justify-center" title="Cancelar esse agendamento?">
+        <FaRegTrashAlt size={20} color="#aa0000" onClick={() => handleRemove({city, date, time, type})} />
+      </span>
+    </div>
   );
 };

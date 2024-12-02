@@ -5,6 +5,7 @@ interface IListing {
   city: string;
   date: string;
   time: string;
+  type: number;
 }
 
 // Definição do contexto de listagem
@@ -38,7 +39,8 @@ export const ListingContext = ({ children }: IListingProps) => {
         (item) =>
           item.city !== listing.city ||
           item.date !== listing.date ||
-          item.time !== listing.time
+          item.time !== listing.time ||
+          item.type !== listing.type
       )
     );
   };

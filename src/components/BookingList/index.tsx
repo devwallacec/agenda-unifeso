@@ -22,25 +22,25 @@ export const BookingList = () => {
 
   // Componente que renderiza a lista de agendamentos
   return (
-    <table className="table-auto w-full md:w-8/12">
-      <thead className="text-left">
-        <tr>
-          <th className="">Cidade</th>
-          <th className="whitespace-nowrap text-center">Data</th>
-          <th className="whitespace-nowrap text-center">Horário</th>
-          <th className="whitespace-nowrap text-center">Cancelar?</th>
-        </tr>
-      </thead>
-      <tbody className="text-left">
+    <div className="w-full md:w-8/12">
+      <div className="w-full hidden md:flex">
+          <span className="flex w-4/12 font-bold">Tipo do Agendamento</span>
+          <span className="flex w-2/12 font-bold">Local</span>
+          <span className="flex w-2/12 font-bold">Data</span>
+          <span className="flex w-2/12 font-bold">Horário</span>
+          <span className="flex w-2/12 font-bold justify-center">Cancelar?</span>
+      </div>
+      <div className="w-full md:w8/12">
         {sortedListings.map((booking, index) => (
           <BookingItem
             key={`${index}-${booking.city}-${booking.date}-${booking.time}`}
+            type={booking.type}
             city={booking.city}
             date={booking.date}
             time={booking.time}
           />
         ))}
-      </tbody>
-    </table>
+      </div>
+    </div>
   );
 };

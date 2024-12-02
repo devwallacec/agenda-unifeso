@@ -17,7 +17,11 @@ export default {
     },
     extend: {
       colors: {
-        "primary": "#0c326f",
+        "primary": "#127e71",
+        "highlight": "#9f1239",
+        "highlight-hover": "#be123c",
+        "muted": "#1e293b",
+        "muted-hover": "#334155"
       },
       scale: {
             '-100': '-1',
