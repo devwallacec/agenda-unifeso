@@ -46,7 +46,7 @@ Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
 
 | **Prioridade** | **Descrição**                                                                                  |
 |----------------|-----------------------------------------------------------------------------------------------|
-| 1              | A plataforma deve proporcionar uma experiência de uso intuitiva, com instruções claras e suporte disponível para resolver dúvidas dos usuários. |
+| 1              | A plataforma deve proporcionar uma experiência de uso intuitiva, com instruções claras. |
 | 2              | A solução deve ser compatível com diferentes dispositivos e navegadores, permitindo o acesso tanto em computadores quanto em dispositivos móveis. |
 | 3              | O sistema deve ser capaz de suportar um aumento no número de usuários e agendamentos sem comprometer o desempenho. |
 | 4              | O sistema deve garantir a segurança e privacidade dos dados pessoais dos usuários, em conformidade com as normas de proteção de dados. |
