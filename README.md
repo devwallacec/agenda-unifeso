@@ -18,6 +18,7 @@ Para o desenvolvimento da plataforma, foram utilizadas as seguintes tecnologias:
 - **Tailwind CSS - Framework CSS que permite criar estilos personalizados.**
 - **React Icons - Biblioteca de icones para o React.**
 - **React Router DOM - Biblioteca para gerir rotas em aplicações React.**
+- **Vite - Ferramenta de compilação e servidor de desenvolvimento para projetos front-end.**
 - **Vercel - Plataforma de hospedagem de sites.**
 - **GitHub - Plataforma de desensolvimento colaborativo.**
 
